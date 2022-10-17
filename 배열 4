@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() 
+{
+  int num, height[7];
+  printf ("\n==== n명의 키 입력 받고 출력하는 프로그램(배열 이용) ====\n");
+  printf ("몇명 입력할거니? :");
+  scanf("%d", &num);
+  printf ("=============================================\n");
+  printf ("%d명 입력 예정입니다. \n", num);
+  for(int i=1; i<=num; i++)
+    {
+      printf("%d번 학생의 키 :", i);
+      scanf("%d", &height[i-1]);
+    }
+  printf ("\n==== 배열 height 내용물 출력 ====\n");
+  for(int i=1; i<=num; i++)
+    {
+      printf("%d번 학생키 : %d \n", i, height[i-1]);
+    }
+  return 0;
+}
